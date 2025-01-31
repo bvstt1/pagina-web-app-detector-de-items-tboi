@@ -3,26 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
+    <title>TBoI Detector de Ítems</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/782e1f1389.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">IOs</a></li>
-            <li><a href="#">Android</a></li>
+            <li><a href="#presentation">Inicio</a></li>
+            <li><a href="#last-changes">Novedades</a></li>
+            <li><a href="#comments">Comentarios</a></li>
         </ul>
     </nav>
-    <!--Bloque Presentación APP-->
-    <div id="presentacion">
-        <h1>Item detected TBoI</h1>
-        <img src="img/isaac300.png" alt="isaac">
-        <h3>Usa tu camara telefonica para identificar items y mejorar tu experiencia en The binding of Isaac</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit voluptas quis. Quas similique voluptates rem maiores. Porro possimus ipsum ea, 
-            eligendi praesentium amet est, enim nam, eos officia deleniti!</p>
-        <video src=""></video>
-    </div>
-    <!--Fin de Bloque Presentación APP-->
+    <!-- APP Presentation Block -->
+    <section id="presentation">
+        <img src="img/isaac300.png" alt="Isaac">
+        <div id="presentation-text">
+            <h1>DETECTOR DE ÍTEMS TBoI</h1>
+            <h3>Usa la cámara de tu teléfono para identificar ítems y mejorar tu experiencia en *The Binding of Isaac*.</h3>
+            <p>Apunta la cámara de tu móvil a la pantalla mientras juegas y obtén información instantánea sobre los objetos detectados.</p>
+            <p>¡Pruébalo GRATIS ahora!</p>
+            <div id="download-img">
+                <img src="img/googleplay.png" alt="Google Play">
+                <img src="img/appstore.png" alt="App Store">
+            </div>
+        </div>
+    </section>
+    <!-- End of APP Presentation Block -->
+    <!-- Video Presentation Block -->
+    <section id="video-presentation">
+        <div id="text-video-presentation" class="center-flex">
+            <h2>DETECTA, DECIDE, DOMINA</h2>
+            <p>Aprende a utilizar la app →</p>
+        </div>
+        <iframe class="center-flex" width="800" height="600" src="https://www.youtube.com/embed/Z6_C2ppkdVc?si=8fWw1BapqSE9UH6b" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+    </section>
+    <!-- End of Video Presentation Block -->
+    <!-- News Block -->
+    <section id="last-changes">
+        <h2 class="subtitle">Últimas Novedades</h2>
+        <div id="card-changes">
+            <div class="card">
+                <img src="img/card1.png" alt="Noticia 1">
+                <p>Actualización | 30/01/25</p>
+                <h3>Ahora en más de 5 idiomas</h3>
+                <p>Descubre los idiomas añadidos en la última actualización.</p>
+                <div class="masinfo"><button type="button">MÁS INFO</button></div>
+            </div>
+            <div class="card">
+                <img src="img/card2.png" alt="Noticia 2">
+                <p>Comunidad | 06/01/25</p>
+                <h3>Más de 1000 descargas en 1 semana</h3>
+                <p>¡Estamos de celebración!</p>
+                <div class="masinfo"><button type="button">MÁS INFO</button></div>
+            </div>      
+            <div class="card">
+                <img src="img/card3.png" alt="Noticia 3">
+                <p>Actualización | 01/12/24</p>
+                <h3>Corrección de bugs</h3>
+                <p>Revisa las notas de la última actualización.</p>
+                <div class="masinfo"><button type="button">MÁS INFO</button></div>
+            </div>
+        </div>
+    </section>
+    <!-- End of News Block -->
+    <!-- Contact Block -->
+    <section id="comments">
+        <h2>Envíanos tus dudas, reclamos o sugerencias a través del siguiente formulario.</h2>
+        <p>No importa de qué se trate, ¡estamos aquí para mejorar y ayudarte!</p>
+        <div id="comments-form">
+            <form action="#">
+                <div class="itemform">
+                    <label for="user">Usuario</label>
+                    <input type="text" id="nombre" name="user" minlength="5" maxlength="50" size="50" required>
+                </div>
+                <div class="itemform">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" minlength="10" maxlength="128" size="52" required>
+                </div>
+                <div class="itemform">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="50" rows="10"></textarea>
+                </div>
+                <div class="itemform">
+                    <input type="submit" name="enviar" value="CONTACTAR">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End of Contact Block -->
+    <!-- Footer -->
+    <footer>
+        <ul id="link-icon">
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://x.com/home?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <ul>
+            <li class="logo"><a href="#presentation"><img src="img/icon.png" alt="Logo"></a></li>
+            <li>© 2025-2025. Todos los logotipos asociados son marcas comerciales, marcas de servicio o marcas comerciales registradas de TBoI, Inc.</li>
+        </ul>
+    </footer>
 </body>
 </html>
